@@ -1,0 +1,111 @@
+body{
+    background-image:linear-gradient(100deg,#de59bf,#e3cfde,#d962a3) ;
+    width:100%;
+}
+hr{
+    height: 2px;
+    border-color: pink;
+    background-color: pink;
+}
+.logo{
+    width:150px;
+    height:70px;
+    text-align:left;
+    margin-right: -100px;
+}
+
+.us{
+    display: flex;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.left{
+    padding-left:220px ;
+    padding-top: 10px;
+}
+.right{
+    padding-right: 10px;
+}
+
+.proper{
+    display:flex;
+    padding-top:10px;
+}
+.test{
+    width:75px;
+    height:10px;
+}
+.menu_bar{
+    background-color:transparent;
+    height:80px;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    
+}
+
+.menu_bar ul{
+    list-style: none;
+    display:flex;
+}
+
+.menu_bar ul li{
+    padding: 8px 8px;
+    position: relative;
+}
+
+.menu_bar ul li a{
+    color:black;
+    text-decoration: none;
+    font-size: 24px;
+    transition: all 0.3s;
+}
+
+.menu_bar ul li a:hover{
+    color: rgb(19, 108, 187);
+    
+}
+.dropdown_menu{
+    display: none;
+}
+
+.menu_bar ul li:hover .dropdown_menu{
+    display: block;
+    position: absolute;
+    left:0;
+    background-color: rgb(244, 218, 240);
+}
+
+.menu_bar ul li:hover .dropdown_menu ul{
+    display: block;
+    margin: 10px;
+    
+}
+
+.menu_bar ul li:hover .dropdown_menu ul li{
+    width: 150px;
+    padding: 10px;
+    width:max-content;
+}
+
+.fas{
+    float:right;
+    margin-left:10px ;
+    padding-top: 1px;
+}
+
+.dropdown_menu-1{
+    display:none;
+}
+
+.dropdown_menu ul li:hover .dropdown_menu-1{
+    display:block;
+    position: absolute;
+    top: 0px;
+    left: 100px;
+    background-color: rgb(244, 203, 238);
+    width:max-content;
+}

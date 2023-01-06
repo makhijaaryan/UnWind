@@ -1,0 +1,178 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/selftest.css">
+    <title>Self-Assessment</title>
+    <style>
+        .hello {
+            width: 100%;
+            background-image: linear-gradient(100deg, #de59bf, #e3cfde, #d962a3);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .buffer {
+            padding-top: 10px;
+        }
+
+        body {
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .heading {
+            text-align: center;
+            width: 100%;
+            margin: auto;
+
+        }
+
+        #head {
+            font-size: 1.8cm;
+        }
+
+        #subheading {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .content {
+            width: 90%;
+            margin: 10px;
+            padding-bottom: 90px;
+        }
+
+        form {
+            background-color: azure;
+            padding-top: 34px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60%;
+            border-radius: 5px;
+            margin: auto;
+            margin-top: 10px;
+            padding-bottom: 60px;
+        }
+
+        form .box {
+            width: 99%;
+            height: 2.8cm;
+            position: relative;
+            bottom: 10px;
+            border: 0;
+            border-radius: 5px;
+        }
+
+        .button {
+            border-radius: 10px;
+            height: 50px;
+            width: 100px;
+            background-color: lightpink;
+            margin-left: 200px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hello">
+        <div class="heading">
+            <h1 class="buffer">Self-Assessment Test</h1>
+            <h2 id="subheading">Take this Test to see your progress</h2>
+        </div>
+        <form class="check" action="/selftest" method="post">
+            <div id="content">
+                <label>Name</label><br><br>
+                <input type="Userame" name="username" placeholder="Enter your Name" class="Box" required=""><br><br>
+                <label>Email</label><br><br>
+                <input type="text" name="email" placeholder="Enter your Email ID" class="Box" required=""><br><br>
+
+                <label id="head1">1. Have you been recently, able to concentrate on what you’re doing? </label><br><br>
+                <input type="radio" name="ques_1" class="larger" value="4">Not at all<br><br>
+                <input type="radio" name="ques_1" class="larger" value="3">No more than usual <br><br>
+                <input type="radio" name="ques_1" class="larger" value="2">Rather more than usual<br><br>
+                <input type="radio" name="ques_1" class="larger" value="1">Much more than usual<br><br>
+                <hr><br>
+
+                <label id="head1">2. Have you recently lost much sleep over worry?</label><br><br>
+                <input type="radio" name="ques_2" class="larger" value="1">Not at all<br><br>
+                <input type="radio" name="ques_2" class="larger" value="2">No more than usual <br><br>
+                <input type="radio" name="ques_2" class="larger" value="3">Rather more than usual<br><br>
+                <input type="radio" name="ques_2" class="larger" value="4">Much more than usual<br><br>
+                <hr><br>
+
+                <label id="head1">3. Have you been recently feeling you were playing a useful part in
+                    things?</label><br><br>
+                <input type="radio" name="ques_3" class="larger" value="4">Not at all<br><br>
+                <input type="radio" name="ques_3" class="larger" value="3">No more than usual <br><br>
+                <input type="radio" name="ques_3" class="larger" value="2">Rather more than usual<br><br>
+                <input type="radio" name="ques_3" class="larger" value="1">Much more than usual<br><br>
+                <hr><br>
+
+                <label id="head1">4. Have you recently felt capable of making decisions about things?</label><br><br>
+                <input type="radio" name="ques_4" class="larger" value="4">Not at all<br><br>
+                <input type="radio" name="ques_4" class="larger" value="3">No more than usual <br><br>
+                <input type="radio" name="ques_4" class="larger" value="2">Rather more than usual<br><br>
+                <input type="radio" name="ques_4" class="larger" value="1">Much more than usual<br><br>
+                <hr><br>
+
+                <label id="head1">5. Have you been recently able to enjoy your normal day-to-day
+                    activities?</label><br><br>
+                <input type="radio" name="ques_5" class="larger" value="4">Not at all<br><br>
+                <input type="radio" name="ques_5" class="larger" value="3">No more than usual <br><br>
+                <input type="radio" name="ques_5" class="larger" value="2">Rather more than usual<br><br>
+                <input type="radio" name="ques_5" class="larger" value="1">Much more than usual<br><br>
+                <hr><br>
+
+                <label id="head1">6. Have you recently felt you couldn’t overcome your difficulties?</label><br><br>
+                <input type="radio" name="ques_6" class="larger" value="1">Not at all<br><br>
+                <input type="radio" name="ques_6" class="larger" value="2">No more than usual <br><br>
+                <input type="radio" name="ques_6" class="larger" value="3">Rather more than usual<br><br>
+                <input type="radio" name="ques_6" class="larger" value="4">Much more than usual<br><br>
+                <hr><br>
+
+                <label id="head1">7. Have you recently been losing confidence in yourself?</label><br><br>
+                <input type="radio" name="ques_7" class="larger" value="1">Not at all<br><br>
+                <input type="radio" name="ques_7" class="larger" value="2">No more than usual <br><br>
+                <input type="radio" name="ques_7" class="larger" value="3">Rather more than usual<br><br>
+                <input type="radio" name="ques_7" class="larger" value="4">Much more than usual<br><br>
+                <hr><br>
+
+                <label id="head1">8. Have you recently been feeling reasonably happy, all things
+                    considered</label><br><br>
+                <input type="radio" name="ques_8" class="larger" value="4">Not at all<br><br>
+                <input type="radio" name="ques_8" class="larger" value="3">No more than usual <br><br>
+                <input type="radio" name="ques_8" class="larger" value="2">Rather more than usual<br><br>
+                <input type="radio" name="ques_8" class="larger" value="1">Much more than usual<br><br>
+                <hr><br>
+
+                <label id="head1">9. Have you recently been thinking of yourself as a worthless person?</label><br><br>
+                <input type="radio" name="ques_9" class="larger" value="1">Not at all<br><br>
+                <input type="radio" name="ques_9" class="larger" value="2">No more than usual <br><br>
+                <input type="radio" name="ques_9" class="larger" value="3">Rather more than usual<br><br>
+                <input type="radio" name="ques_9" class="larger" value="4">Much more than usual<br><br>
+                <hr><br>
+
+                <label id="head1">10. Have you recently been able to face up to your problems?</label><br><br>
+                <input type="radio" name="ques_10" class="larger" value="4">Not at all<br><br>
+                <input type="radio" name="ques_10" class="larger" value="3">No more than usual <br><br>
+                <input type="radio" name="ques_10" class="larger" value="2">Rather more than usual<br><br>
+                <input type="radio" name="ques_10" class="larger" value="1">Much more than usual<br><br>
+                <hr><br>
+
+                <button type="submit" class="button">Submit</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>

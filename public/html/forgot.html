@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Forgot password</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url(../unwind/image/bg.jpg);
+        }
+
+        .form-container {
+            position: absolute;
+            top: 25%;
+            left: 35%;
+            background-color: #fff;
+            border-radius: 10px;
+            display: flex;
+            height: 300px;
+            width: 400px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form-container .form-wrap {
+            background: #fff;
+            padding: 15px 20px;
+            width: 40px;
+        }
+
+        .form-container .form-wrap h2 {
+            text-align: center;
+            margin: 0px 0px 20px;
+            font-size: 20px;
+        }
+
+        .form-container .form-wrap .form-box {
+            margin: 0px 0px 15px;
+        }
+
+        .form-container .form-wrap .form-box input[type="text"] {
+            border-radius: 3px;
+            padding: 5px 8px;
+            width: 100%;
+            border: 1px solid #353535;
+        }
+
+        .form-container .form-wrap .form-submit {
+            display: flex;
+            justify-content: center;
+        }
+
+        .form-container .form-wrap .form-submit input[type="submit"] {
+
+            padding: 20px 10px;
+            border: none;
+            border-radius: 2px;
+            color: #fff;
+            cursor: pointer;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <form action="#" method="POST" class="from-wrap">
+            <h2>Forgot Password</h2>
+            <hr>
+            <br>
+            <h5>Please Enter Email ID:</h5>
+            <div class="form-box">
+                <input type="text" placeholder="Enter Email">
+            </div>
+            <br>
+            <div class="form-submit">
+                <input type="submit" value="Send" required>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
